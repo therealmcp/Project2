@@ -1,3 +1,46 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../images/gamer.jpgr");
+  /* background-image: url(".jpg"); */
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#input {
+
+position: absolute;
+top: 30px;
+right: 16px;
+font-size: 18px;
+}
+
+.appName {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 50px;
+  color: white;
+  font-family: 'Monoton';
+
+}
+
+#login {
+margin-right: 10px;
+margin-left: 15px;
+}
+
