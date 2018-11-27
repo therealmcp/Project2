@@ -15,7 +15,7 @@
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "mysql2": "^1.5.3",
-    "sequelize": "^4.38.0"
+    "sequelize": "^4.41.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -25,5 +25,18 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealmcp/Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/therealmcp/Project2/issues"
+  },
+  "homepage": "https://github.com/therealmcp/Project2#readme"
 }
