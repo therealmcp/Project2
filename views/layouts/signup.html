@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Google Fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <!-- Google Icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+
+ body {
+     height: 1100px; 
+    background-color: rgb(125, 139, 0);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top right, black, rgb(112, 103, 25)); /* Standard syntax (must be last) */
+}
+
+ /* #heading { 
+    
+}  */
+
+.fontInfo {
+    color: white;
+    text-align: center; 
+    font-family: 'Audiowide';
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.space{
+    padding: 10px;
+
+}
+
+#Rating {
+    font-size:26px;
+}
+
+/* #controller {
+    font-size: 100px;
+    color:white;
+    /* text-align: center; */
+    /* display: inline;
+    padding-left: 20px;
+    padding-top: 50px;
+    /* margin-top: 15px;      */
+    /* text-shadow: 2px 2px 4px #000000;
+
+} */ 
+
+/* #heading {
+    display:inline;
+    margin-left: 23%;
+    padding-bottom: 60px;
+} */ 
+
+
+    </style>
+
+</head>
+
+    <body>
+
+        <div class="container"> 
+
+        <h1 id="heading" class="fontInfo">Welcome to App Name</h1>
+        <!-- <i class="material-icons" id="controller" >videogame_asset</i> -->
+
+        <h3 class="fontInfo">A place for gamers to connect and strategize!</h3>
+
+
+        <p class ="fontInfo">Let us know a little about you, so we can connect you with other members of our gaming community.</p>
+
+                <form>
+                        <div class="form-group space">
+                          <!-- <label for="exampleInputEmail1">Email address</label> -->
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="UserName">
+                          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="form-group space">
+                          <!-- <label for="exampleInputPassword1">Password</label> -->
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                </form>
+
+                        <div class="input-group mb-3 space">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                            </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label" for="inputGroupFile01">Attach a Photo or Avatar</label>
+                        </div>
+                      </div>
+
+                      <div class="input-group mb-3 space">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">Favorite Video Game Genre?</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div> 
+                          
+                          <div class="input-group mb-3 space">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-default">Favorite Game of All Time?</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                              </div>
+
+                        <h2 class="fontInfo" id="Rating">Rate your gaming style.  1 (Not my thing) to 5 (I'm all about it!)</h2>
+                        
+                        <div class="input-group mb-3 space">
+                                <div class="input-group-prepend">
+                                  <label class="input-group-text" for="inputGroupSelect01">Competetive Level</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                  <option value="4">Four</option>
+                                  <option value="5">Five</option>
+                                </select>
+                              </div> 
+
+                              <div class="input-group mb-3 space">
+                                    <div class="input-group-prepend">
+                                      <label class="input-group-text" for="inputGroupSelect01">Strategic</label>
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                      <option selected>Choose...</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                      <option value="4">Four</option>
+                                      <option value="5">Five</option>
+                                    </select>
+                                  </div> 
+
+                                  <div class="input-group mb-3 space">
+                                        <div class="input-group-prepend">
+                                          <label class="input-group-text" for="inputGroupSelect01">Multiplayer Games</label>
+                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                          <option selected>Choose...</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                          <option value="4">Four</option>
+                                          <option value="5">Five</option>
+                                        </select>
+                                      </div> 
+
+                    
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

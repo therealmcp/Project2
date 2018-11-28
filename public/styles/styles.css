@@ -2,6 +2,7 @@
   line-height: 2.5;
 }
 
+
 body, html {
   height: 100%;
   margin: 0;
@@ -9,7 +10,7 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("../images/gamer.jpgr");
+  background-image: url("../images/gamer.jpg");
   /* background-image: url(".jpg"); */
 
   /* Full height */
