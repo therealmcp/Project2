@@ -1,23 +1,29 @@
 var db = require("../models");
+var path = require("path");
 
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
+    db.User.findAll({}).then(function(dbUsers) {
       res.render("index", {
         msg: "Welcome!",
-        examples: dbExamples
+        users: dbUsers
+      });
+      console.log(dbUsers);
+    });
+  });
+
+  // Load user page and pass in an user by id
+  app.get("/user/:id", function(req, res) {
+    db.User.findOne({ where: { id: req.params.id } }).then(function(dbUser) {
+      res.render("user", {
+        user: dbUser
       });
     });
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
+  app.get("/newUser", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/newUser.html"));
   });
 
   // Render 404 page for any unmatched routes
