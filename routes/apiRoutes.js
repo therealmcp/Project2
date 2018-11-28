@@ -20,7 +20,8 @@ module.exports = function(app) {
         res.json(user);
       });
   }
-
+  //This is the route for our new user page to post its contents into the database
+  //We are also using session here at the end to automatically log the user in
   app.post("/api/newuser", function(req, res) {
     db.users
       .create({
