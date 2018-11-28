@@ -5,17 +5,6 @@
     <div class="jumbotron">
       <h1>New User</h1>
       <h3>Create A Profile</h3>
-      <hr>
-      <a href="/" class="btn btn-danger btn-lg">
-        <span class="fa fa-eye"></span> Search Books</a>
-      <a href="/add" class="btn btn-danger btn-lg">
-        <span class="fa fa-plus"></span> Add New Book</a>
-      <a href="/all" class="btn btn-danger btn-lg">
-        <span class="fa fa-th-list"></span> All Books</a>
-      <a href="/long" class="btn btn-danger btn-lg">
-        <span class="fa fa-th-list"></span> Long Books</a>
-      <a href="/short" class="btn btn-danger btn-lg">
-        <span class="fa fa-th-list"></span> Short Books</a>
     </div>
 
     <div class="row">
@@ -39,10 +28,26 @@
                 <label for="">Password</label>
                 <input type="text" class="form-control" id="userPassword" placeholder="">
               </div>
+              <div class="form-group">
+                <label for="">Birth Day</label>
+                <input type="text" class="form-control" id="userBirth" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="">Upload Profile Picture!</label>
+                <input type="text" class="form-control" id="profPic" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="">Bio</label>
+                <input type="text" class="form-control" id="userBio" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="">Games</label>
+                <input type="text" class="form-control" id="userGames" placeholder="">
+              </div>
             </form>
             <br>
             <div class="text-right">
-              <button type="submit" class="btn btn-primary btn-md" id="add-btn">
+              <a href="/api/newuser"><button type="submit" class="btn btn-primary btn-md" id="add-btn"></a>
                 <span class="fa fa-book"></span>Submit</button>
             </div>
           </div>
