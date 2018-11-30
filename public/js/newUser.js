@@ -34,6 +34,10 @@ $("#add-btn").on("click", function(event) {
   });
   // Empty each input box once posted
   $("#userName").val("");
-  $("#email").val("");
-  $("#password").val("");
+  $("#userEmail").val("");
+  $("#userPassword").val("");
+  $("#userBio").val("");
+  $("#profPic").val("");
+  $("#userGames").val("");
+  $("#userBirth").val("");
 });
