@@ -30,8 +30,9 @@ module.exports = function(app) {
         password: req.body.password,
         birthdate: req.body.birthdate,
         pic: req.body.pic,
-        bio: req.body.userBio,
-        games: req.body.games
+        bio: req.body.bio,
+        games: req.body.games,
+        results: null
       })
       .then(function(user) {
         req.session.user = user.dataValues;
@@ -40,4 +41,42 @@ module.exports = function(app) {
         res.json(user);
       });
   });
+
+  //route to get all posts from database table posts
+  // app.get("/api/posts", function(req, res) {
+  //   db.posts.findAll({}).then(function(posts) {});
+  // });
+
+  // //this is the route to filter out by badge declaration
+  // app.get("/api/badges", function(req, res) {
+  //   db.posts
+  //     .findAll({
+  //       where: {
+  //         classPic: searchParam
+  //       }
+  //     })
+  //     .then(function(badgeUsers) {})
+  // });
+
+  // //route to create a new post in the database and return it onto the screen after creation
+  // app.post("/api/newpost", function(req, res) {
+  //   db.posts.create({}).then(function(newPost) {});
+  // });
+
+  // //route to get user information and to populate user profile page
+  // app.get("/api/profile", function(req, res) {
+  //   db.users
+  //     .findOne({
+  //       where: {
+  //         id: req.session.user.id
+  //       }
+  //     })
+  //     .then(function(user) {
+  //       res.send(user);
+  //     });
+  // });
+
+  // app.post("/api/comment", function(req, res) {
+  //   db.comments.create({}).then(function(newPost) {});
+  // });
 };
