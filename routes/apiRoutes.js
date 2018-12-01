@@ -64,19 +64,36 @@ module.exports = function(app) {
   // });
 
   // //route to get user information and to populate user profile page
-  // app.get("/api/profile", function(req, res) {
-  //   db.users
-  //     .findOne({
-  //       where: {
-  //         id: req.session.user.id
-  //       }
-  //     })
-  //     .then(function(user) {
-  //       res.send(user);
-  //     });
-  // });
+  app.get("/api/profile", function(req, res) {
+    var user = req.session.user;
+    db.users
+      .findOne({
+        where: {
+          id: user.id
+        }
+      })
+      .then(function(user) {
+        console.log(user);
+        res.json(user);
+      });
+  });
 
   // app.post("/api/comment", function(req, res) {
   //   db.comments.create({}).then(function(newPost) {});
+  // });
+
+  // app.put("/logout", function(req, res) {
+  //   var user = req.session.user;
+  //   db.mockpeople
+  //     .findOne({
+  //       where: {
+  //         id: user.id
+  //       }
+  //     })
+  //     .then(function(user) {
+  //       req.session.user = null;
+  //       req.session.authenticated = false;
+  //       res.json(user);
+  //     });
   // });
 };
