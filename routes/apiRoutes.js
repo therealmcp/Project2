@@ -82,4 +82,26 @@ module.exports = function(app) {
   //       res.json(user);
   //     });
   // });
+
+  // PUT route for updating user info with badge assignment
+  app.put("/api/survey", function(req, res) {
+    var user = req.session.user;
+    console.log(req.body.badge);
+    var badge = req.body.badge;
+    db.users
+      .update(
+        {
+          badge: badge
+        },
+        {
+          where: {
+            id: user.id
+          }
+        }
+      )
+      .then(function(user) {
+        console.log(user);
+        res.json(user);
+      });
+  });
 };
