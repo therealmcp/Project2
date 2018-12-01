@@ -54,3 +54,41 @@ margin-right: 10px;
 margin-left: 15px;
 }
 
+  /* #input {
+
+position: absolute;
+top: 30px;
+right: 16px;
+font-size: 18px;
+} */
+
+      #brandish {
+        font-family: 'Monoton';
+        color: white;
+      }
+
+      .nav-item {
+        color: white !important;
+      }
+
+      #topCard{
+        background-color:rgba(255, 0, 0, 0);
+        top: 30px;
+        left: 26px;
+        display: inline-block;
+        color:white;
+      
+      }
+
+      #messages {
+        display: inline-block;
+        top: 30px;
+        left: 260px;
+        /* background-color: darkgray; */
+      }
+
+      #commentCard {
+        visibility: hidden;
+      }
+
+ 
