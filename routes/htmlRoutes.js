@@ -12,6 +12,11 @@ module.exports = function(app) {
     res.render("signup");
   });
 
+  //Load survey page
+  app.get("/survey", function(req, res) {
+    res.render("survey");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
