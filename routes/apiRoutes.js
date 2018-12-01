@@ -1,5 +1,4 @@
 var db = require("../models");
-
 module.exports = function(app) {
   //This is our route for user log in
   app.post("/api/login", login);
@@ -64,19 +63,6 @@ module.exports = function(app) {
   // });
 
   // //route to get user information and to populate user profile page
-  app.get("/api/profile", function(req, res) {
-    var user = req.session.user;
-    db.users
-      .findOne({
-        where: {
-          id: user.id
-        }
-      })
-      .then(function(user) {
-        console.log(user);
-        res.json(user);
-      });
-  });
 
   // app.post("/api/comment", function(req, res) {
   //   db.comments.create({}).then(function(newPost) {});
