@@ -31,6 +31,10 @@ $("#add-btn").on("click", function(event) {
     pic: pic,
     bio: userBio,
     games: games
+  }).then(function(res) {
+    if (res.redirect) {
+      window.location.pathname = res.redirect;
+    }
   });
   // Empty each input box once posted
   $("#userName").val("");

@@ -15,6 +15,9 @@ $("#login").on("click", function() {
       password: password
     },
     function(res) {
+      if (res.redirect) {
+        window.location.pathname = res.redirect;
+      }
       console.log(res);
     }
   );

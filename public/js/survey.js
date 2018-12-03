@@ -55,7 +55,6 @@ $("#submit").on("click", function(event) {
       // Grab the response from the AJAX post so that the assigned badge image is displayed.
       console.log(data);
       $("#badge").attr("src", data.badge);
-
       // Show the modal with the badge assignment
       $("#results-modal").modal("toggle");
     });
