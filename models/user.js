@@ -10,20 +10,5 @@ module.exports = function(sequelize, DataTypes) {
     games: DataTypes.STRING,
     results: DataTypes.INTEGER
   });
-
-  var posts = sequelize.define("posts", {
-    user: DataTypes.STRING,
-    post: DataTypes.STRING,
-    pic: DataTypes.STRING,
-    badge: DataTypes.STRING
-  });
-
-  var comments = sequelize.define("comments", {
-    user: DataTypes.STRING,
-    post: DataTypes.STRING,
-    pic: DataTypes.STRING,
-    badge: DataTypes.STRING
-  });
-
-  return comments, posts, User;
+  return User;
 };

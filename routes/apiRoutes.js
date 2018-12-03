@@ -58,9 +58,21 @@ module.exports = function(app) {
   // });
 
   // //route to create a new post in the database and return it onto the screen after creation
-  // app.post("/api/newpost", function(req, res) {
-  //   db.posts.create({}).then(function(newPost) {});
-  // });
+  app.post("/api/newpost", function(req, res) {
+    var userName = req.session.user;
+    console.log(userName);
+    db.posts
+      .create({
+        user: userName.id,
+        name: userName.name,
+        post: req.body.message,
+        pic: userName.pic,
+        badge: userName.badge
+      })
+      .then(function(newPost) {
+        res.send(newPost);
+      });
+  });
 
   // //route to get user information and to populate user profile page
 
