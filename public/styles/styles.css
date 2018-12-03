@@ -54,41 +54,32 @@ margin-right: 10px;
 margin-left: 15px;
 }
 
-  /* #input {
+#brandish {
+  font-family: 'Monoton';
+  color: white;
+}
 
-position: absolute;
-top: 30px;
-right: 16px;
-font-size: 18px;
-} */
+.nav-item {
+  color: white !important;
+  font-family: "Aldrich";
+}
 
-      #brandish {
-        font-family: 'Monoton';
-        color: white;
-      }
+#UN{
+  top: 200px;
+  left: 35%;
+  font-family: "Aldrich";
+}
 
-      .nav-item {
-        color: white !important;
-      }
+#messageInput{
+  top: 220px;
+  left: 35%;
+  font-family: "Aldrich";
+}
 
-      #topCard{
-        background-color:rgba(255, 0, 0, 0);
-        top: 30px;
-        left: 26px;
-        display: inline-block;
-        color:white;
-      
-      }
-
-      #messages {
-        display: inline-block;
-        top: 30px;
-        left: 260px;
-        /* background-color: darkgray; */
-      }
-
-      #commentCard {
-        visibility: hidden;
-      }
-
+#postButton{
+  position:relative;
+  top: 230px;
+  left: 80%;
+  font-family: "Aldrich";
+}
  
