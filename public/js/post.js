@@ -35,10 +35,9 @@ $(document).ready(function() {
     $.ajax({
       method: "DELETE",
       url: "/api/posts/" + id
-    })
-      .then(function() {
-        getPosts(postCategorySelect.val());
-      });
+    }).then(function() {
+      getPosts(postCategorySelect.val());
+    });
   }
 
   function initializeRows() {
@@ -51,7 +50,7 @@ $(document).ready(function() {
   }
 
   function createNewRow(post) {
-    var formattedDate= new Date(post.createdAt);
+    var formattedDate = new Date(post.createdAt);
     formattedDate = moment(formattedDate).format("MMM Do YYYY, h:mm:ss a");
     var newPostCard = $("<div>");
     newPostCard.addClass("card");

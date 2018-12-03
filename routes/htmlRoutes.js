@@ -9,18 +9,17 @@ module.exports = function(app) {
 
   app.get("/profile", function(req, res) {
     var user = req.session.user;
-    db.users
-      .findOne({
-        where: {
-          id: user.id
-        }
-      })
-      .then(function(user) {
-        res.render("profile", {
-          msg: "hey guys",
-          userData: user
-        });
+    console.log(req.session);
+    db.User.findOne({
+      where: {
+        id: user.id
+      }
+    }).then(function(user) {
+      res.render("profile", {
+        msg: "hey guys",
+        userData: user
       });
+    });
   });
 
   // Load example page and pass in an example by id

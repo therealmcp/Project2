@@ -1,4 +1,4 @@
-INSERT INTO users (name, email, password, age, score) VALUES ('Derek', 'derek@derek.com', 'pwderek', 32, 10);
+INSERT INTO users (email, name, password, birthdate, pic, badge, bio, games, results) VALUES ('derek@derek.com', 'Derek', 'pwderek', "01/01/01", );
 INSERT INTO users (name, email, password, age, score) VALUES ('Colin', 'colin@derek.com', 'pwcolin', 33, 1);
 INSERT INTO users (name, email, password, age, score) VALUES ('Josh', 'josh@derek.com', 'pwjosh', 25, 8);
 INSERT INTO users (name, email, password, age, score) VALUES ('Jared', 'jared@derek.com', 'pwjared', 32, 9);
