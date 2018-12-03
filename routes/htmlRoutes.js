@@ -33,6 +33,14 @@ module.exports = function(app) {
     res.render("survey");
   });
 
+  app.get("/post", function(req, res) {
+    res.render("post");
+  });
+
+  app.get("/message", function(req, res) {
+    res.render("message");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
