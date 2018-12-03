@@ -16,7 +16,10 @@ module.exports = function(app) {
         req.session.user = user.dataValues;
         req.session.authenticated = true;
         console.log(req.session);
-        res.json(user);
+        res.json({
+          user: user,
+          redirect: "/profile"
+        });
       });
   }
   //This is the route for our new user page to post its contents into the database
@@ -36,8 +39,11 @@ module.exports = function(app) {
       .then(function(user) {
         req.session.user = user.dataValues;
         req.session.authenticated = true;
+        res.json({
+          user: user,
+          redirect: "/survey"
+        });
         console.log(req.session);
-        res.render("survey");
       });
   });
 
@@ -58,9 +64,21 @@ module.exports = function(app) {
   // });
 
   // //route to create a new post in the database and return it onto the screen after creation
-  // app.post("/api/newpost", function(req, res) {
-  //   db.posts.create({}).then(function(newPost) {});
-  // });
+  app.post("/api/newpost", function(req, res) {
+    var userName = req.session.user;
+    console.log(userName);
+    db.posts
+      .create({
+        user: userName.id,
+        name: userName.name,
+        post: req.body.message,
+        pic: userName.pic,
+        badge: userName.badge
+      })
+      .then(function(newPost) {
+        res.send(newPost);
+      });
+  });
 
   // //route to get user information and to populate user profile page
 
@@ -68,20 +86,10 @@ module.exports = function(app) {
   //   db.comments.create({}).then(function(newPost) {});
   // });
 
-  // app.put("/logout", function(req, res) {
-  //   var user = req.session.user;
-  //   db.mockpeople
-  //     .findOne({
-  //       where: {
-  //         id: user.id
-  //       }
-  //     })
-  //     .then(function(user) {
-  //       req.session.user = null;
-  //       req.session.authenticated = false;
-  //       res.json(user);
-  //     });
-  // });
+  app.get("/api/logout", function(req, res) {
+    (req.session.user = null), (req.session.authenticated = false);
+    res.render("index");
+  });
 
   // PUT route for updating user info with badge assignment
   app.put("/api/survey", function(req, res) {
