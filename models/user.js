@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define("users", {
+  var User = sequelize.define("User", {
     email: DataTypes.STRING,
     name: DataTypes.STRING,
     password: DataTypes.STRING,
@@ -11,19 +11,11 @@ module.exports = function(sequelize, DataTypes) {
     results: DataTypes.INTEGER
   });
 
-  var posts = sequelize.define("posts", {
-    user: DataTypes.STRING,
-    post: DataTypes.STRING,
-    pic: DataTypes.STRING,
-    badge: DataTypes.STRING
-  });
+  User.associate = function(models) {
+    User.hasMany(models.Post, {
+      onDelete: "cascade"
+    });
+  };
 
-  var comments = sequelize.define("comments", {
-    user: DataTypes.STRING,
-    post: DataTypes.STRING,
-    pic: DataTypes.STRING,
-    badge: DataTypes.STRING
-  });
-
-  return comments, posts, User;
+  return User;
 };
