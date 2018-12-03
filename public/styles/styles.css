@@ -54,3 +54,33 @@ margin-right: 10px;
 margin-left: 15px;
 }
 
+#brandish {
+  font-family: 'Monoton';
+  color: white;
+}
+
+.nav-item {
+  color: white !important;
+  font-family: "Aldrich";
+}
+
+#UN{
+  top: 200px;
+  left: 35%;
+  font-family: "Aldrich";
+}
+
+#messageInput{
+  top: 220px;
+  left: 35%;
+  font-family: "Aldrich";
+}
+
+#postButton{
+  position:relative;
+  top: 230px;
+  left: 80%;
+  font-family: "Aldrich";
+}
+
+

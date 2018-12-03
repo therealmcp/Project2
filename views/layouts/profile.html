@@ -11,17 +11,11 @@
   
     <!-- Google Text CDN -->
     <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+
 
     <style>
 
-      
-      /* #input {
-
-position: absolute;
-top: 30px;
-right: 16px;
-font-size: 18px;
-} */
 
       #brandish {
         font-family: 'Monoton';
@@ -30,6 +24,7 @@ font-size: 18px;
 
       .nav-item {
         color: white !important;
+        font-family: "Aldrich";
       }
 
       #topCard{
@@ -38,18 +33,25 @@ font-size: 18px;
         left: 26px;
         display: inline-block;
         color:white;
-      
+        font-family: "Aldrich";
       }
 
       #messages {
         display: inline-block;
         top: 30px;
         left: 260px;
-        /* background-color: darkgray; */
+        font-family: "Aldrich";
+
       }
 
       #commentCard {
         visibility: hidden;
+        font-family: "Aldrich";
+
+      }
+
+      .card-img-top {
+        border-radius: 100%;
       }
 
  body, html {
@@ -70,10 +72,6 @@ font-size: 18px;
                 background-size: cover;
             }
 
-            /* .row{
-              background-color: #bbda5500;
-            } */
-
 
     </style>
   
@@ -88,10 +86,10 @@ font-size: 18px;
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#">Message Board <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Post</a>
+            <a class="nav-item nav-link" href="#">Sign Out</a>
           </div>
         </div>
       </nav>  
@@ -101,16 +99,14 @@ font-size: 18px;
       <div class="card text-center" style="width: 18rem;" id="topCard">
         <img class="card-img-top" src="Jared-Crazy-Face.jpg" alt="Card image cap">
         <div class="card-body">
-            <!-- User Name here in  Card Title -->
           <h5 class="card-title">User Name Here</h5>
-            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            
           <span class="badge badge-primary">This is your Badge</span>
           <hr>
-          <h5 class="card-title">BIO Info Here</h5>
-          <h2 class="card-text">Enter your Games</h2>
-          <h2 class="card-text">More Games</h2>
-          <h2 class="card-text">More Games</h2>
+          <h5 class="card-title">Bio Info Here</h5>
+          <h5 class="card-text">Enter your Games</h5>
+          <h5 class="card-text">More Games</h5>
+          <h5 class="card-text">More Games</h5>
         </div>
       </div>
 
@@ -120,7 +116,6 @@ font-size: 18px;
           <div class="card">
             <h5 class="card-header">User Name Here</h5>
             <div class="card-body">
-              <!-- <h5 class="card-title">Special title treatment</h5> -->
               <p class="card-text">Here is the users Post.</p>
               <p class="card-text">Games are fun and all kinds of other noise.</p>
               <p class="card-text">Talk talk talk talk.</p>
