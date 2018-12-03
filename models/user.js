@@ -10,5 +10,16 @@ module.exports = function(sequelize, DataTypes) {
     games: DataTypes.STRING,
     results: DataTypes.INTEGER
   });
+
   return User;
 };
+
+// User.associate = function(models) {
+//   User.hasMany(models.Post, {
+//     onDelete: "cascade"
+//   });
+// };
+
+// >>>>>>> development
+// return User;
+// };
