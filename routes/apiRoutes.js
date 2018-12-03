@@ -37,7 +37,7 @@ module.exports = function(app) {
         req.session.user = user.dataValues;
         req.session.authenticated = true;
         console.log(req.session);
-        res.json(user);
+        res.render("survey");
       });
   });
 
