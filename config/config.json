@@ -1,7 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "4321Mommy",
+connectsurv
+    "password": "4321Mommy"
     "database": "usersdb",
     "host": "localhost",
     "dialect": "mysql"
