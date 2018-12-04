@@ -33,6 +33,21 @@ html {
   height: 100%;
 }
 
+.modal-text {
+  text-align: center;
+}
+
+#badge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.jumbotron {
+  font-family: "Aldrich"
+}
+
 /* .bg {
   margin: 0;
   /* The image used */
