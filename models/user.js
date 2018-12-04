@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define("users", {
+  var User = sequelize.define("Users", {
     email: DataTypes.STRING,
     name: DataTypes.STRING,
     password: DataTypes.STRING,
@@ -10,17 +10,10 @@ module.exports = function(sequelize, DataTypes) {
     games: DataTypes.STRING,
     results: DataTypes.INTEGER
   });
+  User.associate = function(models) {
+    User.hasMany(models.posts, {
+      onDelete: "cascade"
+    });
+  };
   return User;
 };
-
-// User.associate = function(models) {
-//   User.hasMany(models.Post, {
-//     onDelete: "cascade"
-//   });
-// };
-
-// >>>>>>> development
-// return User;
-// };
-
- 

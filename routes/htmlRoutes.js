@@ -10,14 +10,17 @@ module.exports = function(app) {
   app.get("/profile", function(req, res) {
     var user = req.session.user;
     console.log(req.session);
-    db.User.findOne({
-      where: {
-        id: user.id
-      }
-    }).then(function(user) {
-      res.render("profile", {
-        msg: "hey guys",
-        userData: user
+    db.Users
+      .findOne({
+        where: {
+          id: user.id
+        }
+      })
+      .then(function(user) {
+        res.render("profile", {
+          msg: "hey guys",
+          userData: user
+        });
       });
     });
   });

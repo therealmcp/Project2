@@ -41,20 +41,13 @@ $("#submit").on("click", function(event) {
     console.log(badge);
 
     // AJAX post the result.
-    /* $.post(
-      "/api/survey",
-      {
-        badge: badge
-      }, */
 
     $.ajax({
       method: "PUT",
       url: "/api/survey",
       data: { badge: badge }
-    }).then(function(data) {
-      // Grab the response from the AJAX post so that the assigned badge image is displayed.
-      console.log(data);
-      $("#badge").attr("src", data.badge);
+    }).then(function() {
+      $("#badge").attr("src", "../images/" + badge);
       // Show the modal with the badge assignment
       $("#results-modal").modal("toggle");
     });

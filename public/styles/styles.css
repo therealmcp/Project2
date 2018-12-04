@@ -80,3 +80,14 @@ margin-left: 15px;
   background-color: blue;
   color: white;
 }
+
+.modal-text {
+  text-align: center;
+}
+
+#badge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
