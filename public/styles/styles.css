@@ -72,6 +72,22 @@ html {
 
 }
 
+.signContainer {
+  max-width: 50%;
+  position: relative;
+  left: 27%;
+  margin: 5px;
+
+}
+
+.surContainer {
+  max-width: 77%;
+  position: relative;
+  left: 13%;
+  margin: 5px;
+
+}
+
 .name{
   position: absolute;
   left: 48%;
@@ -135,6 +151,10 @@ html {
   font-family: "Aldrich";
 }
 
+.postP{
+  width: 122%;
+}
+
 
 #messageInput {
   top: 220px;
@@ -143,9 +163,9 @@ html {
 }
 
 #postButton{
-  position:relative;
-  top: 230px;
-  left: 80%;
+  position: relative;
+  top: -63px;
+  left: 14%;
   font-family: "Aldrich";
 }
 
@@ -153,7 +173,8 @@ html {
 
 #formBox{
   position: absolute;
-  left: 20%;
+  top: 28%;
+  left: 24%;
   font-family: "Aldrich";
 }
 
