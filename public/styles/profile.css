@@ -1,0 +1,18 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  /* The image used */
+  background-image: url("../images/keyboard.jpg");
+  /* background-image: url(".jpg"); */
+
+  /* Full height */
+  height: 100%;
+  overflow-x: hidden;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
