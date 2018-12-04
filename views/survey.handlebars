@@ -1,81 +1,92 @@
 <div class="container">
-  <h2 class="fontInfo" id="Rating">Rate your gaming style. 1 (Not my thing) to 5 (I'm all about it!)</h2>
 
-  <div class="input-group mb-3 space">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="inputGroupSelect01">Competetive Level</label>
-    </div>
-    <select class="custom-select" id="q1">
-      <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-    </select>
+    <br>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Welcome to Let's Play!</h1>
+    <p class="lead">Let us know a little about you. You'll be assigned a badge so you can connect with like-minded players!</p>
   </div>
+</div>
+        <br>
 
-  <div class="input-group mb-3 space">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="inputGroupSelect01">Strategic</label>
-    </div>
-    <select class="custom-select" id="q2">
-      <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-    </select>
-  </div>
+   <div class="input-group mb-3 space">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="q1">When I play, I expect other players to be on my level.</label>
+        </div>
+        <select class="custom-select" id="q1">
+            <option selected>Choose...</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        </div> 
 
-  <div class="input-group mb-3 space">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="inputGroupSelect01">Multiplayer Games</label>
-    </div>
-    <select class="custom-select" id="q3">
-      <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-    </select>
-  </div>
+    <div class="input-group mb-3 space">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="q2">Do you like to strategize and coordinate with your teammates or just hang out and have fun?</label>
+        </div>
+        <select class="custom-select" id="q2">
+            <option selected>Choose...</option>
+            <option value="1">1 (Hang out)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strategize)</option>
+        </select>
+        </div> 
 
-  <div class="input-group mb-3 space">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="inputGroupSelect01">Multiplayer Games</label>
-    </div>
-    <select class="custom-select" id="q4">
-      <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-    </select>
-  </div>
+        <div class="input-group mb-3 space">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="q3"> My teammates should be around my age.</label>
+            </div>
+            <select class="custom-select" id="q3">
+                <option selected>Choose...</option>
+                <option value="1">1 (Not neccesarily)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Must have)</option>
+            </select>
+            </div> 
 
-  <div class="input-group mb-3 space">
-    <div class="input-group-prepend">
-      <label class="input-group-text" for="inputGroupSelect01">Multiplayer Games</label>
-    </div>
-    <select class="custom-select" id="q5">
-      <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-    </select>
-  </div>
+            <div class="input-group mb-3 space">
+                <div class="input-group-prepend">
+                <label class="input-group-text" for="q4">I need my teammates to use a microphone.</label>
+                </div>
+                <select class="custom-select" id="q4">
+                <option selected>Choose...</option>
+                <option value="1">1 (Not neccesarily)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Must have)</option>
+                </select>
+            </div>
 
 
-  <div class="text-right">
+            <div class="input-group mb-3 space">
+                <div class="input-group-prepend">
+                <label class="input-group-text" for="q5">How competitive are you when you play?</label>
+                </div>
+                <select class="custom-select" id="q5">
+                <option selected>Choose...</option>
+                <option value="1">1 (Not at all)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Winning is life)</option>
+                </select>
+            </div>
+
+
+    <div class="text-right">
     <a href="/api/survey"><button type="submit" class="btn btn-primary btn-md" id="submit"></a>
     <span class="fa fa-book"></span>Submit</button>
-  </div>
+    </div>
+
 </div>
 
  <!-- Modal -->
