@@ -5,46 +5,42 @@ module.exports = function(app) {
   //This is our function to use the session npm package to run a session when a user logs
   //in and is found in the database
   function login(req, res) {
-    db.Users
-      .findOne({
-        where: {
-          email: req.body.email,
-          password: req.body.password
-        }
-      })
-      .then(function(user) {
-        req.session.user = user.dataValues;
-        req.session.authenticated = true;
-        console.log(req.session);
-        res.json({
-          user: user,
-          redirect: "/profile"
-        });
+    db.Users.findOne({
+      where: {
+        email: req.body.email,
+        password: req.body.password
+      }
+    }).then(function(user) {
+      req.session.user = user.dataValues;
+      req.session.authenticated = true;
+      console.log(req.session);
+      res.json({
+        user: user,
+        redirect: "/profile"
       });
+    });
   }
   //This is the route for our new user page to post its contents into the database
   //We are also using session here at the end to automatically log the user in
   app.post("/api/newuser", function(req, res) {
-    db.Users
-      .create({
-        name: req.body.name,
-        email: req.body.email,
-        password: req.body.password,
-        birthdate: req.body.birthdate,
-        pic: req.body.pic,
-        bio: req.body.bio,
-        games: req.body.games,
-        results: null
-      })
-      .then(function(user) {
-        req.session.user = user.dataValues;
-        req.session.authenticated = true;
-        res.json({
-          user: user,
-          redirect: "/survey"
-        });
-        console.log(req.session);
+    db.Users.create({
+      name: req.body.name,
+      email: req.body.email,
+      password: req.body.password,
+      birthdate: req.body.birthdate,
+      pic: req.body.pic,
+      bio: req.body.bio,
+      games: req.body.games,
+      results: null
+    }).then(function(user) {
+      req.session.user = user.dataValues;
+      req.session.authenticated = true;
+      res.json({
+        user: user,
+        redirect: "/survey"
       });
+      console.log(req.session);
+    });
   });
 
   //route to get all posts from database table posts
@@ -97,20 +93,18 @@ module.exports = function(app) {
     var user = req.session.user;
     console.log(req.body.badge);
     var badge = req.body.badge;
-    db.users
-      .update(
-        {
-          badge: badge
-        },
-        {
-          where: {
-            id: user.id
-          }
+    db.Users.update(
+      {
+        badge: badge
+      },
+      {
+        where: {
+          id: user.id
         }
-      )
-      .then(function(user) {
-        console.log(user);
-        res.json(user);
-      });
+      }
+    ).then(function(user) {
+      console.log(user);
+      res.json(user);
+    });
   });
 };
