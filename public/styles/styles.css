@@ -1,3 +1,110 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+body, html {
+  margin: 0;
+  /* The image used */
+  background-image: url("../images/gamer.jpg");
+  /* background-image: url(".jpg"); */
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+.main {
+  height: 100px;
+}
+
+.bg2 {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/gamer.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+
+
+#input {
+
+position: absolute;
+top: 30px;
+right: 16px;
+font-size: 18px;
+}
+
+.appName {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 50px;
+  color: white;
+  font-family: 'Monoton';
+
+}
+
+#login {
+margin-right: 10px;
+margin-left: 15px;
+}
+
+#brandish {
+  font-family: 'Monoton';
+  color: white;
+}
+
+.nav-item {
+  color: white !important;
+  font-family: "Aldrich";
+}
+
+#UN{
+  top: 200px;
+  left: 35%;
+  font-family: "Aldrich";
+}
+
+
+#messageInput{
+  top: 220px;
+  left: 35%;
+  font-family: "Aldrich";
+}
+
+#postButton{
+  position:relative;
+  top: 230px;
+  left: 80%;
+  font-family: "Aldrich";
+}
+
+
+
+/* #formBox{
+  position: absolute;
+  top: 50%;
+  left:32%;
+}
+
+#postButton {
+  background-color: blue;
+  color: white;
+}
+
+.modal-text {
+  text-align: center;
+}
+
+#badge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
+}
+

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Post</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+   <!-- Google Text CDN -->
+   <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+
+
+<style>
+   #brandish {
+        font-family: 'Monoton';
+        color: white;
+      }
+
+      .nav-item {
+        color: white !important;
+        font-family: "Aldrich";
+      }
+
+  body, html {
+                height: 100%;
+                margin: 0;
+            }
+            
+            .bg-image {
+                /* The image used */
+                background-image: url("keyboard.jpg");
+            
+                /* Full height */
+                height: 100%; 
+            
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+          #UN{
+            top: 200px;
+            left: 35%;
+            font-family: "Aldrich";
+          }
+
+          #messageInput{
+            top: 220px;
+            left: 35%;
+            font-family: "Aldrich";
+          }
+
+          #postButton{
+            position:relative;
+            top: 230px;
+            left: 80%;
+            font-family: "Aldrich";
+          }
+
+
+</style>
+  </head>
+  <body>
+
+      <div class="bg-image">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+              <a class="navbar-brand" id="brandish" href="#">APP NAME</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link active" href="#">Profile <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#">Message Board</a>
+                  <a class="nav-item nav-link" href="#">Sign Out</a>
+                  <!-- <button type="button" class="btn btn-outline-primary">Profile</button>
+                  <button type="button" class="btn btn-outline-primary">Sign Out</button>
+                </div> -->
+              </div>
+            </nav>  
+
+
+            <div class="input-group col-md-3" id="UN">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">User Name</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            <form>
+                <div class="form-group col-md-6" id="messageInput" >
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type Post Here"></textarea>
+                </div>
+              </form>
+
+              <button type="button" class="btn btn-outline-primary" id="postButton">Post</button>
+
+
+  
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
