@@ -70,7 +70,23 @@ margin-left: 15px;
   font-family: "Aldrich";
 }
 
-#formBox{
+
+#messageInput{
+  top: 220px;
+  left: 35%;
+  font-family: "Aldrich";
+}
+
+#postButton{
+  position:relative;
+  top: 230px;
+  left: 80%;
+  font-family: "Aldrich";
+}
+
+
+
+/* #formBox{
   position: absolute;
   top: 50%;
   left:32%;
@@ -89,5 +105,6 @@ margin-left: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 50%; */
 }
+
