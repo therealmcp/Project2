@@ -142,9 +142,16 @@ html {
   font-family: "Aldrich";
 }
 
+#postButton{
+  position:relative;
+  top: 230px;
+  left: 80%;
+  font-family: "Aldrich";
+}
+
+
+
 #formBox{
-  width: 65%;
-  top: 28%;
   position: absolute;
   left: 20%;
   font-family: "Aldrich";
@@ -155,11 +162,17 @@ html {
   left: 4%;
 }
 
-#postButton{
-  position: absolute;
-  left: 80%;
-  bottom: 17%;
-  font-size: 54px;
-  font-family: "Aldrich";
+.modal-text {
+  text-align: center;
 }
 
+#badge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.jumbotron {
+  font-family: "Aldrich"
+}
