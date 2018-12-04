@@ -33,6 +33,9 @@ $("#postButton").on("click", function() {
       message: message
     },
     function(res) {
+      if (res.redirect) {
+        window.location.pathname = res.redirect;
+      }
       console.log(res);
     }
   );

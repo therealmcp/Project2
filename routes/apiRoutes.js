@@ -73,7 +73,9 @@ module.exports = function(app) {
         UserId: userName.id
       })
       .then(function(newPost) {
-        res.send(newPost);
+        res.json({
+          redirect: "/message"
+        });
       });
   });
 
