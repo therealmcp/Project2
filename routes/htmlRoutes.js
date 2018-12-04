@@ -9,7 +9,8 @@ module.exports = function(app) {
 
   app.get("/profile", function(req, res) {
     var user = req.session.user;
-    db.users
+    console.log(req.session);
+    db.Users
       .findOne({
         where: {
           id: user.id

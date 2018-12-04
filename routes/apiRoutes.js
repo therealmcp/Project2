@@ -5,7 +5,7 @@ module.exports = function(app) {
   //This is our function to use the session npm package to run a session when a user logs
   //in and is found in the database
   function login(req, res) {
-    db.users
+    db.Users
       .findOne({
         where: {
           email: req.body.email,
@@ -25,7 +25,7 @@ module.exports = function(app) {
   //This is the route for our new user page to post its contents into the database
   //We are also using session here at the end to automatically log the user in
   app.post("/api/newuser", function(req, res) {
-    db.users
+    db.Users
       .create({
         name: req.body.name,
         email: req.body.email,
@@ -73,7 +73,8 @@ module.exports = function(app) {
         name: userName.name,
         post: req.body.message,
         pic: userName.pic,
-        badge: userName.badge
+        badge: userName.badge,
+        UserId: userName.id
       })
       .then(function(newPost) {
         res.send(newPost);
