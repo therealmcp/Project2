@@ -87,7 +87,7 @@ module.exports = function(app) {
 
   app.get("/api/logout", function(req, res) {
     (req.session.user = null), (req.session.authenticated = false);
-    res.render("index");
+    res.redirect("/");
   });
 
   // PUT route for updating user info with badge assignment
