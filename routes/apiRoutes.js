@@ -74,7 +74,9 @@ module.exports = function(app) {
         UserId: userName.id
       })
       .then(function(newPost) {
-        res.send(newPost);
+        res.json({
+          redirect: "/message"
+        });
       });
   });
 
@@ -86,7 +88,7 @@ module.exports = function(app) {
 
   app.get("/api/logout", function(req, res) {
     (req.session.user = null), (req.session.authenticated = false);
-    res.render("index");
+    res.redirect("/");
   });
 
   // PUT route for updating user info with badge assignment

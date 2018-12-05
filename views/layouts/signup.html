@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Sign Up</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,14 +18,11 @@
 
  body {
      height: 1100px; 
-    background-color: rgb(125, 139, 0);
+    background-color: midnightblue;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to top right, black, rgb(112, 103, 25)); /* Standard syntax (must be last) */
+    background-image: linear-gradient(to top right, DarkMagenta, midnightblue); /* Standard syntax (must be last) */
 }
 
- /* #heading { 
-    
-}  */
 
 .fontInfo {
     color: white;
@@ -44,24 +41,6 @@
     font-size:26px;
 }
 
-/* #controller {
-    font-size: 100px;
-    color:white;
-    /* text-align: center; */
-    /* display: inline;
-    padding-left: 20px;
-    padding-top: 50px;
-    /* margin-top: 15px;      */
-    /* text-shadow: 2px 2px 4px #000000;
-
-} */ 
-
-/* #heading {
-    display:inline;
-    margin-left: 23%;
-    padding-bottom: 60px;
-} */ 
-
 
     </style>
 
@@ -71,7 +50,7 @@
 
         <div class="container"> 
 
-        <h1 id="heading" class="fontInfo">Welcome to App Name</h1>
+        <h1 id="heading" class="fontInfo">Welcome to Let's Play</h1>
         <!-- <i class="material-icons" id="controller" >videogame_asset</i> -->
 
         <h3 class="fontInfo">A place for gamers to connect and strategize!</h3>
@@ -82,7 +61,7 @@
                 <form>
                         <div class="form-group space">
                           <!-- <label for="exampleInputEmail1">Email address</label> -->
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="UserName">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User Name">
                           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                         </div>
                         <div class="form-group space">
@@ -91,27 +70,20 @@
                         </div>
                 </form>
 
-                        <div class="input-group mb-3 space">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                            </div>
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                          <label class="custom-file-label" for="inputGroupFile01">Attach a Photo or Avatar</label>
-                        </div>
-                      </div>
+            
+                            <div class="input-group mb-3 space">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-default">Add Avatar or Photo</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter Pic URL Here">
+                              </div>
 
                       <div class="input-group mb-3 space">
-                            <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Favorite Video Game Genre?</label>
-                            </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>Choose...</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                          </div> 
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Whats your date of birth?</span>
+                          </div>
+                          <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="(MM/DD/YY)">
+                        </div>
                           
                           <div class="input-group mb-3 space">
                                 <div class="input-group-prepend">
@@ -120,49 +92,64 @@
                                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                               </div>
 
-                        <h2 class="fontInfo" id="Rating">Rate your gaming style.  1 (Not my thing) to 5 (I'm all about it!)</h2>
+                        <h2 class="fontInfo" id="Rating">A few questions about your gaming style.</h2>
                         
                         <div class="input-group mb-3 space">
                                 <div class="input-group-prepend">
-                                  <label class="input-group-text" for="inputGroupSelect01">Competetive Level</label>
+                                  <label class="input-group-text" for="inputGroupSelect01">When I play, I expect other players to be on my level.</label>
                                 </div>
                                 <select class="custom-select" id="inputGroupSelect01">
                                   <option selected>Choose...</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                  <option value="4">Four</option>
-                                  <option value="5">Five</option>
+                                  <option value="1">1 (Strongly Disagree)</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5 (Strongly Agree)</option>
                                 </select>
                               </div> 
 
                               <div class="input-group mb-3 space">
                                     <div class="input-group-prepend">
-                                      <label class="input-group-text" for="inputGroupSelect01">Strategic</label>
+                                      <label class="input-group-text" for="inputGroupSelect01">Do you like to strategize and coordinate with your teammates or just hang out and have fun?</label>
                                     </div>
                                     <select class="custom-select" id="inputGroupSelect01">
                                       <option selected>Choose...</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                      <option value="4">Four</option>
-                                      <option value="5">Five</option>
+                                      <option value="1">1 (Hang out)</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5 (Strategize)</option>
                                     </select>
                                   </div> 
 
                                   <div class="input-group mb-3 space">
                                         <div class="input-group-prepend">
-                                          <label class="input-group-text" for="inputGroupSelect01">Multiplayer Games</label>
+                                          <label class="input-group-text" for="inputGroupSelect01"> My teammate should be around my age.</label>
                                         </div>
                                         <select class="custom-select" id="inputGroupSelect01">
                                           <option selected>Choose...</option>
-                                          <option value="1">One</option>
-                                          <option value="2">Two</option>
-                                          <option value="3">Three</option>
-                                          <option value="4">Four</option>
-                                          <option value="5">Five</option>
+                                          <option value="1">1 (Not neccesarily)</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5 (Must have)</option>
                                         </select>
                                       </div> 
+
+                                      <div class="input-group mb-3 space">
+                                          <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">I need my teammates to use a microphone.</label>
+                                          </div>
+                                          <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Choose...</option>
+                                            <option value="1">1 (Not neccesarily)</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5 (Must have)</option>
+                                          </select>
+                                        </div> 
+  
 
                     
 
