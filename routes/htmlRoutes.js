@@ -9,16 +9,19 @@ module.exports = function(app) {
 
   app.get("/profile", function(req, res) {
     var user = req.session.user;
-    console.log(req.session);
+    // console.log(req.session);
     db.Users.findOne({
       where: {
         id: user.id
-      }
+      },
+      include: [db.posts]
     }).then(function(user) {
       res.render("profile", {
         msg: "hey guys",
-        userData: user
+        userData: user,
+        posts: user.posts
       });
+      // console.log("USER INFO: ", user);
     });
   });
 
@@ -37,7 +40,21 @@ module.exports = function(app) {
   });
 
   app.get("/message", function(req, res) {
-    res.render("message");
+    var user = req.session.user;
+    // console.log(req.session);
+    db.Users.findOne({
+      where: {
+        id: user.id
+      }
+    }).then(function(user) {
+      db.posts.findAll({}).then(function(post) {
+        res.render("message", {
+          posts: post,
+          user: user
+        });
+        console.log("ALL POSTS", post);
+      });
+    });
   });
 
   // Render 404 page for any unmatched routes
