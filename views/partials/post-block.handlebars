@@ -1,0 +1,22 @@
+<li>
+    <div class="col-sm-6" id="postMessages">
+    <div class="postCard">
+      <h4 class="card-header" id="postCardHeader">{{this.dataValues.userName}} <img src="images/{{this.dataValues.badge}}" alt="" id="postB" style="width=10px"> </h4>
+      <div class="card-body" id="postCardBody">
+        <!-- <h5 class="card-title">Special title treatment</h5> -->
+        <p id="userPost">{{this.dataValues.post}}</p>
+        <hr>
+        <p id="timeStamp">{{this.dataValues.createdAt}}</p>
+         <hr>
+        <div class="col-sm-6">
+          <div class="card" id="commentCard">
+            <div class="card-body">
+              Comments go in this card.
+            </div>
+          </div>
+           <button type="button" class="btn btn-outline-primary" id="addComment">Add Comment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
