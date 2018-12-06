@@ -65,11 +65,11 @@ html {
 /* } */
 
 .container {
-  max-width: 50%;
+  max-width: 100%;
   position: relative;
-  right: 24%;
-  top: 1%;
-
+  /* right: 24%;
+  top: 1%; */
+  margin-top: 30px;
 }
 
 .signContainer {
@@ -82,23 +82,23 @@ html {
 
 .surContainer {
   max-width: 77%;
-  position: relative;
-  left: 13%;
-  margin: 5px;
-
+  /* position: relative;
+  left: 13%; */
+  margin: auto;
+  width: 75%
 }
 
-.name{
-  position: absolute;
+.name {
+  /* position: absolute;
   left: 48%;
-  bottom: 76%;
-  font-size: 38px;
+  bottom: 76%; */
+  font-size: 40px;
 }
 
 .post {
-  position: relative;
+ /*  position: relative;
   left: 50%;
-  top: -58%;
+  top: -58%; */
 }
 
 #input {
@@ -108,11 +108,11 @@ html {
   font-size: 18px;
 }
 
-#img{
-  width: 100px;
+#img {
+  /* width: 100px;
   position: absolute;
   left: 48%;
-  bottom: 32%;
+  bottom: 32%; */
 }
 
 .appName {
