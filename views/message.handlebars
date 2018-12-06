@@ -20,16 +20,15 @@
               <div class="container">
               <div class="col-sm-8" id="messages">
                   <div class="card">
-                    <h5 class="card-header">User Name Here</h5>
+                    <h5 class="card-header">{{this.dataValues.name}}</h5>
                     <div class="card-body">
                       <!-- <h5 class="card-title">Special title treatment</h5> -->
                       <p class="card-text">Here is the users Post.</p>
                       {{#each posts}}
-                        <img class="card-img-top" src="images/{{this.dataValues.badge}}" alt="Card image cap" width="150">
+                        <img class="card-img-top" src="images/{{this.dataValues.badge}}" alt="Card image cap" width="150px">
                         <p>{{this.dataValues.post}}</p>
+                        <p>Name: {{this.dataValues.userName}}</p>
                       {{/each}}
-                      <p class="card-text">Games are fun and all kinds of other noise.</p>
-                      <p class="card-text">Talk talk talk talk.</p>
                     
                       <button type="button" class="btn btn-outline-primary">Add Comment</button>
                       <hr>

@@ -1,31 +1,31 @@
 <link rel="stylesheet" href="/styles/profile.css">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand" id="brandish" href="#">Let'sPlay</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="/message">View Posts</a>
-        <a class="nav-item nav-link" href="/post">Make Post</a>
-        <a class="nav-item nav-link" href="/api/logout">Logout</a>
-      </div>
+  <a class="navbar-brand" id="brandish" href="#">Let'sPlay</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/message">View Posts</a>
+      <a class="nav-item nav-link" href="/post">Make Post</a>
+      <a class="nav-item nav-link" href="/api/logout">Logout</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <div class="container">
-    <div class="card">
-  <div class="card-body">
-    <img src="images/therock.jpg" alt="" width="300">
-    <div class="info">
-       <h5 class="name">{{userData.name}}</h5>
-       <img src="images/{{userData.badge}}" alt="Card imagers" id="img" style="width: 100px;">
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <img src="images/{{userData.pic}}" alt="" width="300">
+      <div class="info">
+        <h5 class="name">{{userData.name}}</h5>
+        <img src="images/{{userData.badge}}" alt="Card imagers" id="img" style="width: 100px;">
         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-        
+
         <hr>
         <h4 class="bio">{{userData.bio}}</h4>
         <h4 class="games">{{userData.games}}</h4>
@@ -35,58 +35,38 @@
     </div>
   </div>
 </div>
- 
+
 <div class="post">
-    <div class="col-sm-6" id="messages">
-      <div class="card">
-        <h5 class="card-header">User Name Here</h5>
-        <div class="card-body">
-          <!-- <h5 class="card-title">Special title treatment</h5> -->
-          <p class="card-text">Here is the users Post.</p>
-          <p class="card-text">Games are fun and all kinds of other noise.</p>
-          <p class="card-text">Talk talk talk talk.</p>
-          <button type="button" class="btn btn-outline-primary">Add Comment</button>
-          <hr>
-          <br>
-          <div class="col-sm-6">
-            <div class="card" id="commentCard">
-              <div class="card-body">
-                Comments go in this card.
-              </div>
+  <div class="col-sm-6" id="messages">
+    <div class="card">
+      <h5 class="card-header">User Name Here</h5>
+      <div class="card-body">
+        <!-- <h5 class="card-title">Special title treatment</h5> -->
+        <p class="card-text">Here is the users Post.</p>
+        {{#each posts}}
+        <p>{{this.dataValues.post}}</p>
+        {{/each}}
+        <p class="card-text">Games are fun and all kinds of other noise.</p>
+        <p class="card-text">Talk talk talk talk.</p>
+
+        <button type="button" class="btn btn-outline-primary">Add Comment</button>
+        <hr>
+        <br>
+        <div class="col-sm-6">
+          <div class="card" id="commentCard">
+            <div class="card-body">
+              Comments go in this card.
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  
 
-          <div class="col-sm-6" id="messages">
-          <div class="card">
-            <h5 class="card-header">User Name Here</h5>
-            <div class="card-body">
-              <!-- <h5 class="card-title">Special title treatment</h5> -->
-              <p class="card-text">Here is the users Post.</p>
-              {{#each posts}}
-                <p>{{this.dataValues.post}}</p>
-              {{/each}}
-              <p class="card-text">Games are fun and all kinds of other noise.</p>
-              <p class="card-text">Talk talk talk talk.</p>
-            
-              <button type="button" class="btn btn-outline-primary">Add Comment</button>
-              <hr>
-              <br>
-              <div class="col-sm-6">
-                <div class="card" id="commentCard">
-                  <div class="card-body">
-                    Comments go in this card.
-                  </div>
-                </div>
-                </div>
-            </div>
-          </div>
-          </div>
+
+
 </div>
 
 </div>
