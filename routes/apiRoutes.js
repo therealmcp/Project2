@@ -64,20 +64,26 @@ module.exports = function(app) {
   app.post("/api/newpost", function(req, res) {
     var userName = req.session.user;
     console.log(userName);
-    db.posts
-      .create({
-        user: userName.id,
-        userName: userName.name,
-        post: req.body.message,
-        pic: userName.pic,
-        badge: userName.badge,
-        UserId: userName.id
-      })
-      .then(function(newPost) {
-        res.json({
-          redirect: "/message"
+    db.Users.findOne({
+      where: {
+        id: userName.id
+      }
+    }).then(function(user) {
+      db.posts
+        .create({
+          user: userName.id,
+          userName: userName.name,
+          post: req.body.message,
+          pic: userName.pic,
+          badge: user.badge,
+          UserId: userName.id
+        })
+        .then(function(newPost) {
+          res.json({
+            redirect: "/message"
+          });
         });
-      });
+    });
   });
 
   // //route to get user information and to populate user profile page

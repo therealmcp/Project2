@@ -33,7 +33,7 @@ $("#submit").on("click", function(event) {
     } else if (results <= 15) {
       badge = "social.jpg";
     } else if (results <= 20) {
-      badge = "competetive.jpg";
+      badge = "competitive.jpg";
     } else if (results <= 25) {
       badge = "hardcore.jpg";
     }
