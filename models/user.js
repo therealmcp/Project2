@@ -7,13 +7,15 @@ module.exports = function(sequelize, DataTypes) {
     pic: DataTypes.STRING,
     badge: DataTypes.STRING,
     bio: DataTypes.STRING,
-    games: DataTypes.STRING,
-    results: DataTypes.INTEGER
+    games: DataTypes.STRING
+    // results: DataTypes.INTEGER
   });
+
   User.associate = function(models) {
     User.hasMany(models.posts, {
       onDelete: "cascade"
     });
   };
+
   return User;
 };

@@ -1,10 +1,1 @@
-INSERT INTO users (name, email, password, age, score) VALUES ('Derek', 'derek@derek.com', 'pwderek', 32, 10);
-INSERT INTO users (name, email, password, age, score) VALUES ('Colin', 'colin@derek.com', 'pwcolin', 33, 1);
-INSERT INTO users (name, email, password, age, score) VALUES ('Josh', 'josh@derek.com', 'pwjosh', 25, 8);
-INSERT INTO users (name, email, password, age, score) VALUES ('Jared', 'jared@derek.com', 'pwjared', 32, 9);
-INSERT INTO users (name, email, password, age, score) VALUES ('Julie', 'julie@derek.com', 'pwjulie', 28, 4);
-INSERT INTO users (name, email, password, age, score) VALUES ('Danielle', 'danni@derek.com', 'pwdanni', 19, 2);
-INSERT INTO users (name, email, password, age, score) VALUES ('Becckkah', 'becckkah@derek.com', 'pwbekki', 21, 6);
-INSERT INTO users (name, email, password, age, score) VALUES ('Kirk', 'kirk@derek.com', 'pwkirk', 27, 3);
-INSERT INTO users (name, email, password, age, score) VALUES ('Anne', 'anne@derek.com', 'pwanne', 38, 5);
-INSERT INTO users (name, email, password, age, score) VALUES ('Regina', 'regina@derek.com', 'pwregina', 35, 7); 
+INSERT INTO users (email, name, password, birthdate, pic, badge, bio, games) VALUES ('therock@therock.com', 'The Rock', '123', "01/01/01", "https://goo.gl/images/AfrRiK", "social.jpg", "Can you smell what I'm cooking? It's cookies!", "WWE Online");

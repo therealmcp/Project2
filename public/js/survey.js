@@ -29,13 +29,13 @@ $("#submit").on("click", function(event) {
     //Logic for assigning a badge
     var badge = "";
     if (results < 10) {
-      badge = "casual.png";
+      badge = "casual.jpg";
     } else if (results <= 15) {
-      badge = "social.png";
+      badge = "social.jpg";
     } else if (results <= 20) {
-      badge = "competetive.png";
+      badge = "competetive.jpg";
     } else if (results <= 25) {
-      badge = "hardcore.png";
+      badge = "hardcore.jpg";
     }
 
     console.log(badge);

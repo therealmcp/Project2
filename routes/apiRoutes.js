@@ -1,4 +1,5 @@
 var db = require("../models");
+
 module.exports = function(app) {
   //This is our route for user log in
   app.post("/api/login", login);

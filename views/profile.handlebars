@@ -19,10 +19,10 @@
   <div class="container">
     <div class="card">
   <div class="card-body">
-    <img src="images/{{userData.pic}}" alt="">
+    <img src="images/therock.jpg" alt="" width="300">
     <div class="info">
        <h5 class="name">{{userData.name}}</h5>
-       <img src="images/{{userData.badge}}" alt="Card imagers" id="img" style="width: 250px;">
+       <img src="images/{{userData.badge}}" alt="Card imagers" id="img" style="width: 100px;">
         <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         
@@ -60,6 +60,34 @@
     </div>
   </div>
 
+  
+
+          <div class="col-sm-6" id="messages">
+          <div class="card">
+            <h5 class="card-header">User Name Here</h5>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Special title treatment</h5> -->
+              <p class="card-text">Here is the users Post.</p>
+              {{#each posts}}
+                <p>{{this.dataValues.post}}</p>
+              {{/each}}
+              <p class="card-text">Games are fun and all kinds of other noise.</p>
+              <p class="card-text">Talk talk talk talk.</p>
+            
+              <button type="button" class="btn btn-outline-primary">Add Comment</button>
+              <hr>
+              <br>
+              <div class="col-sm-6">
+                <div class="card" id="commentCard">
+                  <div class="card-body">
+                    Comments go in this card.
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          </div>
+</div>
 
 </div>
 <!-- jQuery -->
