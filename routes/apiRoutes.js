@@ -67,7 +67,7 @@ module.exports = function(app) {
     db.posts
       .create({
         user: userName.id,
-        name: userName.name,
+        userName: userName.name,
         post: req.body.message,
         pic: userName.pic,
         badge: userName.badge,
