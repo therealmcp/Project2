@@ -39,16 +39,13 @@
 <div class="post">
   <div class="col-sm-6" id="messages">
     <div class="card">
-      <h5 class="card-header">User Name Here</h5>
+      <h5 class="card-header">{{userData.name}}</h5>
       <div class="card-body">
         <!-- <h5 class="card-title">Special title treatment</h5> -->
         <p class="card-text">Here is the users Post.</p>
         {{#each posts}}
         <p>{{this.dataValues.post}}</p>
         {{/each}}
-        <p class="card-text">Games are fun and all kinds of other noise.</p>
-        <p class="card-text">Talk talk talk talk.</p>
-
         <button type="button" class="btn btn-outline-primary">Add Comment</button>
         <hr>
         <br>

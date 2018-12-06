@@ -197,3 +197,57 @@ html {
 .jumbotron {
   font-family: "Aldrich"
 }
+
+#postB{
+  width: 50px;
+}
+
+#timeStamp{
+  margin-bottom: -4px;
+  font-size: 11px;
+}
+
+#addComment{
+  text-decoration: underline;
+    margin-top: 9px;
+    position: relative;
+    left: 1%;
+    border: none;
+    color: #E2E0E3;
+    font-family: "Aldrich";
+}
+
+#addComment:hover{
+  background-color: black;
+  color: #5D0DC5;
+}
+
+#postCardHeader{
+  background-color: white;
+  font-family: "Aldrich"
+}
+
+#postMessages {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 21%;
+}
+ .postCard{
+  width: 122%;
+  margin: 0;
+  padding: 0;
+  background-color: #5D0DC5;
+  
+ }
+
+ #postCardBody{
+  color: #E2E0E3;
+
+ }
+
+ #userPost{
+  margin-bottom: 4px;
+  font-size: 20px;
+ }
