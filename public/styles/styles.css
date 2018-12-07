@@ -70,6 +70,7 @@ html {
 
 .name {
   font-size: 40px;
+  text-align: center;
 }
 
 
@@ -201,10 +202,12 @@ html {
   left: 21%;
 }
  .postCard{
-  width: 122%;
-  margin: 0;
-  padding: 0;
-  background-color: #5D0DC5;
+  width: 144%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #5D0DC5;
+    left: 34%;
   
  }
 
@@ -218,13 +221,24 @@ html {
   font-size: 20px;
  }
 
+ #profImg{
+  position: relative;
+  left: 13%;
+ }
+
  #profileMessages {
-   max-width: 100%;
-  width: 700px;
+  max-width: 100%;
+  width: 687px;
   margin: 0px;
   padding: 0px;
   position: relative;
-  left: 3%;
+  left: -31%;
+}
+
+#profBadge{
+  width: 100px;
+  position: relative;
+  left: 36%;
 }
 
 .comment{
