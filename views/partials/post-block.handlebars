@@ -1,21 +1,26 @@
 <li>
-    <div class="col-sm-6" id="postMessages">
+  <div class="col-sm-6" class="postMessages">
     <div class="postCard">
-      <h4 class="card-header" id="postCardHeader">{{this.dataValues.userName}} <img src="images/{{this.dataValues.badge}}" alt="" id="postB" style="width=10px"> </h4>
-      <div class="card-body" id="postCardBody">
+      <h4 class="card-header" id="postCardHeader">{{this.dataValues.userName}} <img src="{{this.dataValues.pic}}" style="width=20px"
+          alt="" id="postImg"> <img src="images/{{this.dataValues.badge}}" alt="" id="postB" style="width=10px"> </h4>
+      <div class="card-body" class="postCardBody">
         <!-- <h5 class="card-title">Special title treatment</h5> -->
         <p id="userPost">{{this.dataValues.post}}</p>
         <hr>
         <p id="timeStamp">{{this.dataValues.createdAt}}</p>
-         <hr>
+        <hr>
         <div class="col-sm-6">
-          <div class="card" id="commentCard">
-            <div class="card-body">
-              Comments go in this card.
-            </div>
-          </div>
-           <button type="button" class="btn btn-outline-primary" id="addComment">Add Comment</button>
+          <input type="hidden" class="postId" value={{this.dataValues.id}}>
+          <input type="text" name="" class="comment"><br>
+          <button type="button" class="btn btn-outline-primary addComment">Add Comment</button>
         </div>
+        <div class="commentSection">
+          <ul>
+          {{#each comments}}
+          <p>{{>comment-block}}</p>
+          {{/each}}
+          </ul>
+          </div>
       </div>
     </div>
   </div>

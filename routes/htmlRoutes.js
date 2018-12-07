@@ -40,19 +40,13 @@ module.exports = function(app) {
   });
 
   app.get("/message", function(req, res) {
-    var user = req.session.user;
-    // console.log(req.session);
-    db.Users.findOne({
-      where: {
-        id: user.id
-      }
-    }).then(function(user) {
-      db.posts.findAll({}).then(function(post) {
+    db.posts.findAll({}).then(function(post) {
+      db.comments.findAll({}).then(function(comments) {
         res.render("message", {
           posts: post,
-          user: user
+          comments: post.comments
         });
-        console.log("ALL POSTS", post);
+        console.log("these are comments", comments);
       });
     });
   });

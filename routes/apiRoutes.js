@@ -44,22 +44,6 @@ module.exports = function(app) {
     });
   });
 
-  //route to get all posts from database table posts
-  // app.get("/api/posts", function(req, res) {
-  //   db.posts.findAll({}).then(function(posts) {});
-  // });
-
-  // //this is the route to filter out by badge declaration
-  // app.get("/api/badges", function(req, res) {
-  //   db.posts
-  //     .findAll({
-  //       where: {
-  //         classPic: searchParam
-  //       }
-  //     })
-  //     .then(function(badgeUsers) {})
-  // });
-
   // //route to create a new post in the database and return it onto the screen after creation
   app.post("/api/newpost", function(req, res) {
     var userName = req.session.user;
@@ -78,7 +62,7 @@ module.exports = function(app) {
           badge: user.badge,
           UserId: userName.id
         })
-        .then(function(newPost) {
+        .then(function() {
           res.json({
             redirect: "/message"
           });
@@ -91,6 +75,25 @@ module.exports = function(app) {
   // app.post("/api/comment", function(req, res) {
   //   db.comments.create({}).then(function(newPost) {});
   // });
+
+  app.post("/api/newComment", function(req, res) {
+    var userName = req.session.user;
+    console.log(userName);
+    db.comments
+      .create({
+        user: userName.id,
+        name: userName.name,
+        comments: req.body.comment,
+        pic: userName.pic,
+        badge: userName.badge,
+        postId: req.body.id
+      })
+      .then(function() {
+        res.json({
+          redirect: "/message"
+        });
+      });
+  });
 
   app.get("/api/logout", function(req, res) {
     (req.session.user = null), (req.session.authenticated = false);

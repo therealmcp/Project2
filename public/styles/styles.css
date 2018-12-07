@@ -48,27 +48,9 @@ html {
   font-family: "Aldrich"
 }
 
-/* .bg {
-  margin: 0;
-  /* The image used */
-/* background-image: url("../images/gamer.jpg"); */
-/* background-image: url(".jpg"); */
-
-/* Full height
-  height: 100%; 
-  width: 100%; */
-
-/* Center and scale the image nicely */
-/* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-/* } */
-
 .container {
   max-width: 100%;
   position: relative;
-  /* right: 24%;
-  top: 1%; */
   margin-top: 30px;
 }
 
@@ -82,37 +64,21 @@ html {
 
 .surContainer {
   max-width: 77%;
-  /* position: relative;
-  left: 13%; */
   margin: auto;
   width: 75%
 }
 
 .name {
-  /* position: absolute;
-  left: 48%;
-  bottom: 76%; */
   font-size: 40px;
 }
 
-.post {
- /*  position: relative;
-  left: 50%;
-  top: -58%; */
-}
+
 
 #input {
   position: absolute;
   top: 30px;
   right: 16px;
   font-size: 18px;
-}
-
-#img {
-  /* width: 100px;
-  position: absolute;
-  left: 48%;
-  bottom: 32%; */
 }
 
 .appName {
@@ -207,7 +173,7 @@ html {
   font-size: 11px;
 }
 
-#addComment{
+.addComment{
   text-decoration: underline;
     margin-top: 9px;
     position: relative;
@@ -217,7 +183,7 @@ html {
     font-family: "Aldrich";
 }
 
-#addComment:hover{
+.addComment:hover{
   background-color: black;
   color: #5D0DC5;
 }
@@ -227,7 +193,7 @@ html {
   font-family: "Aldrich"
 }
 
-#postMessages {
+.postMessages {
   width: 50%;
   margin: 0;
   padding: 0;
@@ -242,7 +208,7 @@ html {
   
  }
 
- #postCardBody{
+ .postCardBody{
   color: #E2E0E3;
 
  }
@@ -251,3 +217,32 @@ html {
   margin-bottom: 4px;
   font-size: 20px;
  }
+
+ #profileMessages {
+   max-width: 100%;
+  width: 700px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  left: 3%;
+}
+
+.comment{
+  width: 113%;
+  height: 30px;
+}
+
+#postImg{
+  width: 45px;
+  border-radius: 30px;
+}
+
+
+.commentSection{
+  background-color: white;
+  height: 100px;
+}
+
+.comments{
+  color: black;
+}
