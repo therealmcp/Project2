@@ -21,19 +21,19 @@
     <div class="col-md-4">
       <div class="card">
         <div class="card-body">
-          <img src="{{userData.pic}}" alt="" width="300">
+          <img src="{{userData.pic}}" alt="" id="profImg" width="300">
           <br>
           <div class="info">
-            <h5 class="name">{{userData.name}}</h5>
+            <h5 class="name" id="profName">{{userData.name}}</h5>
             <br>
-            <img src="images/{{userData.badge}}" alt="Card imagers" id="img" style="width: 100px;">
+            <img src="images/{{userData.badge}}" alt="Card imagers" id="profBadge" style="width: 100px;">
             <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 
             <hr>
-            <h4 class="bio">{{userData.bio}}</h4>
-            <h4 class="games">{{userData.games}}</h4>
-            <h4 class="birthdata">{{userData.birthdate}}</h4>
+            <h4 class="bio">Bio:<br>{{userData.bio}}</h4><hr>
+            <h4 class="games">Games:<br>{{userData.games}}</h4><hr>
+            <h4 class="birthdata">{{userData.birthdate}}</h4><hr>
             <h4 class="email">{{userData.email}}</h4>
           </div>
         </div>

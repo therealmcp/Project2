@@ -47,6 +47,7 @@ module.exports = function(app) {
           comments: post.comments
         });
         console.log("these are comments", comments);
+        console.log("These Are Posts", post);
       });
     });
   });
