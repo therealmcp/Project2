@@ -21,6 +21,10 @@ html {
   background-size: cover;
 }
 
+ul{
+  list-style-type: none;
+}
+
 .main {
   height: 100px;
 }
@@ -253,10 +257,26 @@ html {
 
 
 .commentSection{
-  background-color: white;
-  height: 100px;
+  position: relative;
+    right: 2%;
+    height: 150px;
+    overflow-y: scroll;
 }
 
 .comments{
   color: black;
+}
+
+.commentName{
+  margin: 0px;
+  padding: 0px;
+}
+
+.commentPost{
+  margin: 0px;
+  padding: 0px;
+}
+
+.commentCard{
+  margin-bottom: 3px;s
 }
