@@ -8,6 +8,17 @@ var db = require("./models");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: "m7nj9dclezfq7ax1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: "ma3g32jxmngms6eh",
+    password: "yrspdncwtd8lrjyf",
+    database: "guzbtj40li3xj5xu"
+  });
+}
+
 // Middleware
 app.use(
   express.urlencoded({
