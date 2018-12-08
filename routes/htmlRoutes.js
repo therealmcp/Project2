@@ -40,14 +40,10 @@ module.exports = function(app) {
   });
 
   app.get("/message", function(req, res) {
-    db.posts.findAll({}).then(function(post) {
-      db.comments.findAll({}).then(function(comments) {
-        res.render("message", {
-          posts: post,
-          comments: post.comments
-        });
-        console.log("these are comments", comments);
-        console.log("These Are Posts", post);
+    db.posts.findAll({ include: [db.comments] }).then(function(post) {
+      res.render("message", {
+        posts: post,
+        comments: post.comments
       });
     });
   });

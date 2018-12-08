@@ -81,17 +81,15 @@ module.exports = function(app) {
     console.log(userName);
     db.comments
       .create({
-        user: userName.id,
+        user: req.body.id,
         name: userName.name,
         comments: req.body.comment,
         pic: userName.pic,
         badge: userName.badge,
         postId: req.body.id
       })
-      .then(function() {
-        res.json({
-          redirect: "/message"
-        });
+      .then(function(data) {
+        res.json(data);
       });
   });
 
