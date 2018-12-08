@@ -14,7 +14,7 @@ module.exports = function(app) {
       where: {
         id: user.id
       },
-      include: [db.posts]
+      include: [db.posts],
     }).then(function(user) {
       res.render("profile", {
         msg: "hey guys",

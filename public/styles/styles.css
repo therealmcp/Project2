@@ -194,8 +194,9 @@ ul{
 }
 
 #postCardHeader{
-  background-color: white;
-  font-family: "Aldrich"
+  background-color: #ffffff;
+  font-family: "Aldrich";
+  color: black;
 }
 
 .postMessages {
@@ -212,13 +213,11 @@ ul{
     position: relative;
     background-color: #5D0DC5;
     left: 34%;
+    color: #E2E0E3;
   
  }
 
- .postCardBody{
-  color: #E2E0E3;
-
- }
+ 
 
  #userPost{
   margin-bottom: 4px;
@@ -261,7 +260,34 @@ ul{
     right: 2%;
     height: 150px;
     overflow-y: scroll;
+    color: black;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+.toggleComments{
+  position: relative;
+    left: 86%;
+    background-color: #5D0DC5;
+    border-style: none;
+    color: white;
+}
+
 
 .comments{
   color: black;
@@ -270,6 +296,10 @@ ul{
 .commentName{
   margin: 0px;
   padding: 0px;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: underline;
+
 }
 
 .commentPost{
@@ -278,5 +308,11 @@ ul{
 }
 
 .commentCard{
-  margin-bottom: 3px;s
+  margin-bottom: 3px;
+}
+
+.commentTime{
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
 }
