@@ -2,19 +2,27 @@
   line-height: 2.5;
 }
 
-body, html {
-  margin: 0;
+body,
+html {
+  margin: 0px;
+  padding: 0px;
   /* The image used */
   background-image: url("../images/gamer.jpg");
   /* background-image: url(".jpg"); */
 
   /* Full height */
-  height: 100%; 
+  height: 100%;
+  overflow-x: hidden;
+
 
   /* Center and scale the image nicely */
   background-position: center;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+ul{
+  list-style-type: none;
 }
 
 .main {
@@ -29,14 +37,53 @@ body, html {
   height: 100%;
 }
 
+.modal-text {
+  text-align: center;
+}
+
+#badge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.jumbotron {
+  font-family: "Aldrich"
+}
+
+.container {
+  max-width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+
+.signContainer {
+  max-width: 50%;
+  position: relative;
+  left: 27%;
+  margin: 5px;
+
+}
+
+.surContainer {
+  max-width: 77%;
+  margin: auto;
+  width: 75%
+}
+
+.name {
+  font-size: 40px;
+  text-align: center;
+}
+
 
 
 #input {
-
-position: absolute;
-top: 30px;
-right: 16px;
-font-size: 18px;
+  position: absolute;
+  top: 30px;
+  right: 16px;
+  font-size: 18px;
 }
 
 .appName {
@@ -50,8 +97,13 @@ font-size: 18px;
 }
 
 #login {
-margin-right: 10px;
-margin-left: 15px;
+  margin-right: 10px;
+  margin-left: 15px;
+  font-family: "Aldrich";
+}
+
+#signup{
+  font-family: "Aldrich";
 }
 
 #brandish {
@@ -64,37 +116,42 @@ margin-left: 15px;
   font-family: "Aldrich";
 }
 
-#UN{
+#UN {
   top: 200px;
   left: 35%;
   font-family: "Aldrich";
 }
 
+.postP{
+  width: 122%;
+}
 
-#messageInput{
+
+#messageInput {
   top: 220px;
   left: 35%;
   font-family: "Aldrich";
 }
 
 #postButton{
-  position:relative;
-  top: 230px;
-  left: 80%;
+  position: relative;
+  top: -63px;
+  left: 14%;
   font-family: "Aldrich";
 }
 
 
 
-/* #formBox{
+#formBox{
   position: absolute;
-  top: 50%;
-  left:32%;
+  top: 28%;
+  left: 24%;
+  font-family: "Aldrich";
 }
 
-#postButton {
-  background-color: blue;
-  color: white;
+#message{
+  position: relative;
+  left: 4%;
 }
 
 .modal-text {
@@ -105,6 +162,161 @@ margin-left: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%; */
+  width: 50%;
 }
 
+.jumbotron {
+  font-family: "Aldrich"
+}
+
+#postB{
+  width: 50px;
+}
+
+#timeStamp{
+  margin-bottom: -4px;
+  font-size: 11px;
+}
+
+.addComment{
+  text-decoration: underline;
+    margin-top: 9px;
+    position: relative;
+    left: 1%;
+    border: none;
+    color: #E2E0E3;
+    font-family: "Aldrich";
+}
+
+.addComment:hover{
+  background-color: black;
+  color: #5D0DC5;
+}
+
+#postCardHeader{
+  background-color: #ffffff;
+  font-family: "Aldrich";
+  color: black;
+}
+
+.postMessages {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 21%;
+}
+ .postCard{
+  width: 144%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #5D0DC5;
+    left: 34%;
+    color: #E2E0E3;
+  
+ }
+
+ 
+
+ #userPost{
+  margin-bottom: 4px;
+  font-size: 20px;
+ }
+
+ #profImg{
+  position: relative;
+  left: 13%;
+ }
+
+ #profileMessages {
+  max-width: 100%;
+  width: 687px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  left: -31%;
+}
+
+#profBadge{
+  width: 100px;
+  position: relative;
+  left: 36%;
+}
+
+.comment{
+  width: 113%;
+  height: 30px;
+}
+
+#postImg{
+  width: 45px;
+  border-radius: 30px;
+}
+
+
+.commentSection{
+  position: relative;
+    right: 2%;
+    height: 150px;
+    overflow-y: scroll;
+    color: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+.toggleComments{
+  position: relative;
+    left: 86%;
+    background-color: #5D0DC5;
+    border-style: none;
+    color: white;
+}
+
+
+.comments{
+  color: black;
+}
+
+.commentName{
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: underline;
+
+}
+
+.commentPost{
+  margin: 0px;
+  padding: 0px;
+}
+
+.commentCard{
+  margin-bottom: 3px;
+}
+
+.commentTime{
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.commentBadge{
+  width: 38px;
+}
