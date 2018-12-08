@@ -14,7 +14,7 @@ module.exports = function(app) {
       where: {
         id: user.id
       },
-      include: [db.posts],
+      include: [db.posts]
     }).then(function(user) {
       res.render("profile", {
         msg: "hey guys",
@@ -40,12 +40,17 @@ module.exports = function(app) {
   });
 
   app.get("/message", function(req, res) {
-    db.posts.findAll({ include: [db.comments] }).then(function(post) {
-      res.render("message", {
-        posts: post,
-        comments: post.comments
+    db.posts
+      .findAll({
+        include: [db.comments],
+        order: [["id", "DESC"]]
+      })
+      .then(function(post) {
+        res.render("message", {
+          posts: post,
+          comments: post.comments
+        });
       });
-    });
   });
 
   // Render 404 page for any unmatched routes
