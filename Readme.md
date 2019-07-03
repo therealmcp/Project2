@@ -1,6 +1,6 @@
 # Let's Play
 
-![gripapp image](public/assets/landing.png) 
+![gripapp image](public/images/landing.png) 
 # Overview
 This full stack application allows gamers to find other people to game with based on social preferences, skill level, objectives, specific games, etc. Are you a competitive gamer looking to hone your skills or someone looking to casually learn a new game with chill people? Let's Play has you covered! 
 
@@ -46,6 +46,6 @@ Node.js, JavaScript, Express, Heroku, HTML/CSS, and Handlebars.
 
 ## Credits and Collaborations
 
-Collaborators: [Colin McPike](https://github.com/therealmcp) , [Derek Rutter](https://github.com/rutterer) , [Mona Rahmani ](https://github.com/monarahmani) , [Michael Lee](https://github.com/PurpleBunBunny) , [Jared Yslas](https://github.com/YslasCo)
+Collaborators: [Colin McPike](https://github.com/therealmcp) , [Derek Rutter](https://github.com/rutterer) , [Joshua Pearson](https://github.com/Pearsonj) , [Jared Yslas](https://github.com/YslasCo)
 
 Speical thanks to the Full Stack Flex UW Coding Bootcamp instructional staff who assisted us with this project. 
