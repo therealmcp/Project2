@@ -9,11 +9,11 @@ It includes data persistence using MySQL, data retrieval via JawsDB, Front-end U
 ## Walkthrough
 Our app starts with login page so each user can access their own friends, feed, etc.
 
-Feel free to create a user account by clicking "Sign Up". We recommend using dumming information as we have yet to implement data encryption.
+Feel free to create a user account by clicking "Sign Up". We recommend using dummy information as we have yet to implement data encryption.
 
 Once you have created an account take the gaming test to see what kind of gamer you are and be assigned a badge. You badge will tell other people what you prioritize while gaming.
 
-## Getting Started
+<!-- ## Getting Started
 
 1.  [Using Let's Play](#using-letsplay)
 2.  [Database](#database)
@@ -36,7 +36,7 @@ Enter navigation info here.
 
 ## Next Steps
 
-Next, we would like to implement user authentication and storage that utilizes data encryption.
+Next, we would like to implement user authentication and storage that utilizes data encryption. -->
 
 ## Architecture
 
