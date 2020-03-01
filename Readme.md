@@ -13,6 +13,8 @@ Feel free to create a user account by clicking "Sign Up". We recommend using dum
 
 Once you have created an account take the gaming test to see what kind of gamer you are and be assigned a badge. You badge will tell other people what you prioritize while gaming.
 
+[Click here to get started!](https://polar-falls-14511.herokuapp.com/)
+
 <!-- ## Getting Started
 
 1.  [Using Let's Play](#using-letsplay)
